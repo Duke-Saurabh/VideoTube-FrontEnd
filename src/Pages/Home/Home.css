@@ -1,0 +1,303 @@
+/* General styling for the home page */
+.homePage {
+  color: #f4f4f9; /* Light color for text */
+  font-family: 'Arial', sans-serif; /* Clean font */
+  background-color: #2b2d42; /* Dark background */
+  padding: 20px;
+}
+
+.hamburger-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 00; /* Ensure it stays on top of other elements */
+}
+
+.hamburger-menu .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.videosContainer{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.side-pane {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #1a1a2e;
+  color: white;
+  transition: right 0.3s ease;
+  z-index: 999; /* Ensure it stays on top of other elements */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.side-pane.open {
+  right: 0;
+}
+
+.side-pane .close-btn {
+  background-color: #ef233c;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  align-self: flex-end;
+  transition: background-color 0.3s ease;
+}
+
+.side-pane .close-btn:hover {
+  background-color: #d90429;
+}
+
+.side-pane nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-pane nav ul li {
+  margin: 20px 0;
+}
+
+.side-pane nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s ease;
+}
+
+.side-pane nav ul li a:hover {
+  color: #ef233c;
+}
+
+/* Main content area styling */
+.main-work-area {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #1a1a2e; /* Darker background for content areas */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Welcome notes section */
+.welcomeNotes {
+  padding: 30px 10%;
+  background: linear-gradient(to right, #872d0d, #df4b15); /* Gradient background */
+  color: #f4f4f9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.welcomeNotes h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.welcomeNotes p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Headings for sections */
+.channels-heading, .watchHistory-heading, .watchLater-heading, .videos-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding-left: 15px;
+}
+
+.channels-heading h2, .watchHistory-heading h2, .watchLater-heading h2, .videos-heading h2 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+/* Buttons styling */
+.viewAllChannelsBtn, .viewAllHistoriesBtn, .viewAllWatchLaterBtn, .viewAllVideosBtn,
+.search-channel-btn, .load-more-channels-btn, .search-videos-btn, .load-more-videos-btn, .load-more-watchLater-btn {
+  background-color: #ef233c; /* Primary color */
+  padding: 10px 20px;
+  color: #f4f4f9;
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.search-videos-btn,.search-channel-btn{
+  height: 39.5px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.viewAllChannelsBtn:hover, .viewAllHistoriesBtn:hover, .viewAllWatchLaterBtn:hover, .viewAllVideosBtn:hover,
+.search-channel-btn:hover, .load-more-channels-btn:hover, .search-videos-btn:hover, .load-more-videos-btn:hover, .load-more-watchLater-btn:hover {
+  background-color: #d90429; /* Darker shade on hover */
+}
+
+/* Input fields styling */
+.search-channel, .search-video {
+  background-color: #1a1a2e;
+  padding: 10px;
+  border: 2px solid #ef233c;
+  border-radius: 5px 0 0 5px;
+  margin-left:-5px;
+  color: #f4f4f9;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-channel:focus, .search-video:focus {
+  border-color: #d90429;
+}
+
+/* Flex containers for sections */
+.channels, .watchHistories, .watchLaters, .videos {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+  /* flex-wrap: wrap; */
+  
+}
+
+.channels::-webkit-scrollbar, .watchHistories::-webkit-scrollbar, .watchLaters::-webkit-scrollbar, .videos::-webkit-scrollbar {
+  display: none; /* Hide scrollbars */
+}
+
+.vedio-upload{
+  display:none;
+  position: absolute;
+  width: 100vw;
+  height:100vh;
+  background-color:rgba(255,255,255,0.1);
+  top:55px;
+  display: grid;
+  place-items: center;
+}
+/* Responsive design */
+@media screen and (max-width: 530px) {
+  .channels-heading, .watchHistory-heading, .watchLater-heading, .videos-heading {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+}
+
+
+.channels-heading {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+  padding-left: 15px;
+}
+
+.channels-heading h2 {
+  font-size: 1.5em;
+  margin: 0;
+  flex: 1;
+}
+
+.search-channel-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+  flex: 2;
+}
+
+.search-channel {
+  background-color: #1a1a2e;
+  padding: 10px;
+  border: 2px solid #ef233c;
+  border-radius: 5px 0 0 5px;
+  color: #f4f4f9;
+  outline: none;
+  flex: 1;
+  min-width: 150px;
+  transition: border-color 0.3s ease;
+}
+
+.search-channel:focus {
+  border-color: #d90429;
+}
+
+.search-channel-btn, .viewAllChannelsBtn {
+  background-color: #ef233c;
+  padding: 10px 20px;
+  color: #f4f4f9;
+  font-weight: 600;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.search-channel-btn:hover, .viewAllChannelsBtn:hover {
+  background-color: #d90429;
+}
+
+#UploadVideos{
+  display:none
+}
+/* Responsive Design */
+@media screen and (max-width: 530px) {
+  .channels-heading {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  
+  .channels-heading h2 {
+      margin-bottom: 10px;
+      flex: unset;
+  }
+
+  .search-channel-box {
+      justify-content: space-between;
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .search-channel {
+      border-radius: 5px;
+      margin-bottom: 10px;
+      width: 100%;
+  }
+
+  .search-channel-btn, .viewAllChannelsBtn {
+      border-radius: 5px;
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .search-channel-btn {
+      border-radius: 5px 5px 0 0;
+  }
+
+  .viewAllChannelsBtn {
+      border-radius: 0 0 5px 5px;
+  }
+}

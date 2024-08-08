@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing:border-box;
+ 
+}
+.App {
+  background: 
+      radial-gradient(circle at left top, navy 0%, rgb(56, 12, 139) 60%, rgb(10, 0, 70) 100%),
+      radial-gradient(circle at right top, navy 0%, rgb(56, 12, 139) 60%, rgb(10, 0, 70) 100%);
+  height: 100vh;
+}

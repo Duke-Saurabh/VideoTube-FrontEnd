@@ -1,0 +1,104 @@
+.upload-video-container {
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333;
+}
+
+.upload-video-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ef233c;
+}
+
+.upload-video-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label,.add-playlist-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.add-playlist{
+width: 88%;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 16px;
+display: inline-block;
+margin-bottom: 15px;
+}
+.form-group input[type="file"] {
+    padding: 3px;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.submit-btn,
+.cancel-btn,.add-playlist-btn {
+    background-color: #ef233c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cancel-btn {
+    background-color: #6c757d;
+}
+
+.submit-btn:hover {
+    background-color: #d90429;
+}
+
+.cancel-btn:hover {
+    background-color: #5a6268;
+}
+
+/* Close button styles */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 18px;
+    background: none;
+    border: none;
+    color: #ef233c;
+    font-size:50px;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #d90429;
+}

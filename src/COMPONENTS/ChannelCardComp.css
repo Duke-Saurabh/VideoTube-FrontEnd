@@ -1,0 +1,43 @@
+.ChannelCard{
+    min-width:250px;
+    background-color: rgba(9, 15, 103, 0.4);
+    min-height: 300px;
+    padding: 15px;
+    margin: 10px;
+    border:2px solid rgba(9, 9, 90,0.7);
+    border-radius: 5px;
+    box-shadow:inset 0px 0px 4px 2px rgba(9, 15, 103, 0.4);; /*we can give all value in px or other except shadow-color */
+}
+
+.ChannelCard:hover {
+    transform: translateY(-5px); /* Moves the element up by 5px */
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.channel-image{
+    border:2px solid  blue;
+    border-radius: 5px;
+    height:45%;
+    margin-bottom:10px;
+}
+
+.channel-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:55%;
+}
+
+.desc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: smaller;
+    max-height:150px;
+    overflow: hidden;
+}
+
+.about-channel{
+    display: flex;
+    justify-content: space-between;
+}
+

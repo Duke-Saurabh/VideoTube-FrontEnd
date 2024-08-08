@@ -1,0 +1,125 @@
+.Header{
+  /* background-color:black; */
+    height:8vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap:0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow:visible;
+    border-bottom:1px solid rgba(255,255,255,0.1)
+}
+
+.sign-in{
+  padding: 10px;
+  border:2px solid rgb(223, 75, 21);
+  border-radius: 5px;
+  background: transparent;
+  color:  rgb(223, 75, 21);
+  margin: 5px;
+}
+
+.sign-in:hover{
+  background: rgba(223, 75, 21,0.1);
+}
+.sign-up,.sign-out{
+  padding: 10px;
+  border:2px solid rgb(223, 75, 21);
+  border-radius: 5px;
+  background: rgb(223, 75, 21);
+  color: black;
+  margin: 5px;
+}
+.sign-up:hover,.sign-out:hover{
+  background: rgb(231, 85, 32);
+}
+
+/* .searchBox{
+  width:120%;
+} */
+.search-video{
+  background-color: transparent;
+  padding: 10px;
+  border:2px solid rgba(255,255,255,0.4);
+  border-radius:5px;
+  width: 70%;
+  color:white;
+  display: inline-block;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.search-video:hover{
+  background-color: rgb(17, 17, 121);
+}
+
+.search-video:focus{
+  background-color: rgb(23, 23, 135);
+  outline: rgb(223, 75, 21);
+  border:2px solid rgb(223, 75, 21);
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.search-video-btn{
+  display: inline-block;
+  padding: 10px;
+  border:2px solid rgb(223, 75, 21);
+  border-radius: 5px;
+  background: rgb(223, 75, 21);
+  color: black;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.search-video-btn:hover{
+  background: rgb(231, 85, 32);
+}
+
+.logout-panel{
+  min-width:100%;
+  min-height:100%;
+  background-color: rgba(214, 199, 199, 0.1);
+  /* display: none; */
+  position:absolute;
+  top:0;
+  right:0;
+  z-index: 999;
+  display: grid;
+  place-items: center;
+}
+
+.logout-box{
+  width:200px;
+  height:100px;
+  background-color: rgb(242, 242, 86)
+  /* margin-left: 20px; */
+}
+
+
+.logout-box p{
+  text-align: center;
+  margin-top: 10px;
+  color:black;
+}
+
+.logout-options{
+  margin-top:25px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logout-options button{
+  width:50px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 455px) {
+  .searchBox{
+     display: none;
+  }
+  
+}
